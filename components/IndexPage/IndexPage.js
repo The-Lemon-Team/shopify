@@ -8,7 +8,6 @@ import { Footer } from "../Footer";
 import { Gallery } from "../Gallery";
 import { Header } from "../Header";
 import { Partners } from "../Partners";
-import { ShortFeatures } from "../ShortFeatures";
 
 import { homePagePropTypes } from "../helpers/propTypes";
 import styles from "./IndexPage.module.scss";
