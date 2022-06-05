@@ -12,13 +12,7 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
-    
-      - name: Set up Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
+      # Install your linters here
+      - run: npm install
+      - run: npm run lint
