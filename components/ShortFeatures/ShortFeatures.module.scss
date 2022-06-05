@@ -1,0 +1,39 @@
+.header {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+}
+
+.mainWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    padding-right: 1rem;
+    
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+.iconWrapper {
+    margin-bottom: 1rem;
+}
+
+.titleWrapper {
+    margin-bottom: 0.75rem;
+}
+
+.titleText {
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.descriptionText {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+}

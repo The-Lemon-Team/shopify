@@ -1,0 +1,31 @@
+@import "~/styles/variables.scss";
+
+.btn {
+    outline: none;
+    padding: 0.6rem 2.4rem;
+    font-weight: 600;
+
+    &Primary {
+        background: $primary-main;
+        border: 2px solid $primary-main;
+
+        &:hover,
+        &:focus {
+            background: lighten($primary-main, 15%);
+            border-color: lighten($primary-main, 10%);
+        }
+    }
+
+    &Secondary {
+        border: 2px solid $primary-main;
+        color: $primary-main;
+        background: #fff;
+
+        &:hover,
+        &:focus {
+            border: 2px solid $primary-main;
+            color: #fff;
+            background: lighten($primary-main, 15%);
+        }
+    }
+}

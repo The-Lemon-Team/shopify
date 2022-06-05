@@ -1,0 +1,67 @@
+@import "~/styles/variables.scss";
+
+.main {
+    padding: 6rem 0 7rem;
+    background: $primary-main;
+}
+
+.titleWrapper {
+    margin-bottom: 3.5rem;
+}
+
+.subTitleBtn {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: lighten($primary-main, 15%);
+    }
+}
+
+.subTitle {
+    font-size: 1rem;
+}
+
+.examplesContainer {
+    margin-bottom: 6rem;
+}
+
+.examplesWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exampleItem {
+    &:not(:last-child) {
+        margin-right: 0.85rem;
+    }
+}
+
+.imageWrapper {
+    font-size: 0;
+    margin-bottom: 1.25rem;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.author {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 300;
+}
