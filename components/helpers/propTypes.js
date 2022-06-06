@@ -15,7 +15,18 @@ export const exampleShape = PropTypes.shape({
 });
 export const examplesShape = PropTypes.arrayOf(exampleShape);
 
+export const featureShape = PropTypes.shape({
+  linkText: PropTypes.string,
+  linkPath: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  imageSrc: PropTypes.string,
+});
+
+export const featuresShape = PropTypes.arrayOf(featureShape);
+
 export const homePagePropTypes = {
   examples: examplesShape,
+  features: featuresShape,
   shortFeatures: shortFeaturesShape,
 };

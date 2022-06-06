@@ -1,0 +1,53 @@
+@import "~/styles/variables.scss";
+
+.main {
+    padding-top: 6.5rem;
+}
+
+.titleWrapper {
+    margin-bottom: 4rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 6rem;
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+.textCol {
+    text-align: right;
+}
+
+.itemTitleWrapper {
+    margin-bottom: 1.375rem;
+}
+
+.itemTitle {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $primary-black;
+}
+
+.itemDescriptionWrapper {
+    margin-bottom: 1.62500rem;
+}
+
+.itemDescription {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.link {
+    color: $primary-main;
+    font-size: 1rem;
+    font-weight: 500;
+}

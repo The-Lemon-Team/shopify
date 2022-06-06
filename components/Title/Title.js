@@ -16,11 +16,15 @@ export const Title = ({
 }) => {
   return (
     <div
-      className={classNames({
-        [styles.alignLeft]: align === "left",
-        [styles.primaryBlack]: variant === "primary",
-        [styles.secondaryColor]: variant === "secondary",
-      })}
+      className={classNames(
+        {
+          [styles.alignCenter]: align === "center",
+          [styles.alignLeft]: align === "left",
+          [styles.primaryBlack]: variant === "primary",
+          [styles.secondaryColor]: variant === "secondary",
+        },
+        styles.main
+      )}
     >
       <div className={styles.mainTitleWrapper}>
         {React.createElement(
@@ -31,7 +35,7 @@ export const Title = ({
       </div>
       {subTitle && (
         <Row className={styles.subTitleWrapper}>
-          <Col>
+          <Col lg={8}>
             {React.createElement(
               subTitleElement,
               { className: styles.subTitle },
@@ -61,6 +65,6 @@ Title.propTypes = {
 Title.defaultProps = {
   align: "center",
   element: "h2",
-  subTitleElement: "h3",
+  subTitleElement: "h4",
   variant: "primary",
 };

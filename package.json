@@ -21,6 +21,13 @@
   "devDependencies": {
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "husky": "^8.0.1",
     "sass": "^1.52.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add"
+    ]
   }
 }
