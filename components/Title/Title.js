@@ -35,7 +35,7 @@ export const Title = ({
       </div>
       {subTitle && (
         <Row className={styles.subTitleWrapper}>
-          <Col lg={8}>
+          <Col lg={7}>
             {React.createElement(
               subTitleElement,
               { className: styles.subTitle },
@@ -43,7 +43,7 @@ export const Title = ({
             )}
           </Col>
           {subTitleContent && (
-            <Col lg={4} className={styles.subTitleContent}>
+            <Col lg={5} className={styles.subTitleContent}>
               {subTitleContent}
             </Col>
           )}

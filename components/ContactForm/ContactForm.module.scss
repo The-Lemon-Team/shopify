@@ -1,5 +1,25 @@
 @import "~/styles/variables.scss";
 
+.main {
+    padding: 4rem 0 4rem;
+    background: #FFF7EA;
+}
+
+.wrapper {
+    display: flex;
+    background: #fff;
+}
+
+.titleWrapper {
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2rem;
+    color: $primary-black;
+}
+
 .field {
     margin-bottom: 1rem;
 
@@ -11,4 +31,9 @@
 .label {
     color: $primary-black;
     font-size: 0.75rem;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
 }

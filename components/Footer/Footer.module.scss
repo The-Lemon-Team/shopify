@@ -1,0 +1,23 @@
+@import "~/styles/variables.scss";
+
+.main {
+    padding: 6.8125rem 0 7.5rem;
+    background: $primary-main;
+}
+
+.contactForm {
+    border-radius: 6px;
+    background: #fff;
+}
+
+.headerWrapper {
+    padding-bottom: 3.5rem;
+}
+
+.form {
+    padding: 5rem 4rem 0 5rem;
+}
+
+.imageWrapper {
+    font-size: 0;
+}
