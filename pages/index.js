@@ -85,7 +85,38 @@ const features = [
   },
 ];
 
-export default function Home({ examples, features, shortFeatures }) {
+const partners = [
+  {
+    name: "Cee Cee's Closet",
+    image: "/partners/partner-1.jpg",
+  },
+  {
+    name: "Nalata | Nalata",
+    image: "/partners/partner-2.jpg",
+  },
+  {
+    name: "Kirrin Finch",
+    image: "/partners/partner-3.jpg",
+  },
+  {
+    name: "Weso goods",
+    image: "/partners/partner-4.jpg",
+  },
+  {
+    name: "Coco and breezy",
+    image: "/partners/partner-5.jpg",
+  },
+  {
+    name: "Brooklyn Museum",
+    image: "/partners/partner-6.jpg",
+  },
+  {
+    name: "Adore me",
+    image: "/partners/partner-7.jpg",
+  },
+];
+
+export default function Home({ examples, features, shortFeatures, partners }) {
   return (
     <>
       <Head>
@@ -94,6 +125,7 @@ export default function Home({ examples, features, shortFeatures }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <IndexPage
+        partners={partners}
         shortFeatures={shortFeatures}
         features={features}
         examples={examples}
@@ -114,6 +146,7 @@ export async function getStaticProps() {
     props: {
       examples,
       features,
+      partners,
       shortFeatures,
     },
   };

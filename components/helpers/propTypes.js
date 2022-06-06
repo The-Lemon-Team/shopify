@@ -22,11 +22,17 @@ export const featureShape = PropTypes.shape({
   description: PropTypes.string,
   imageSrc: PropTypes.string,
 });
-
 export const featuresShape = PropTypes.arrayOf(featureShape);
+
+export const partnerShape = PropTypes.shape({
+  image: PropTypes.string,
+  name: PropTypes.string,
+});
+export const partnersShape = PropTypes.arrayOf(partnerShape);
 
 export const homePagePropTypes = {
   examples: examplesShape,
   features: featuresShape,
+  partners: partnersShape,
   shortFeatures: shortFeaturesShape,
 };

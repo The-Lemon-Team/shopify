@@ -11,7 +11,7 @@ import { Partners } from "../Partners";
 import { homePagePropTypes } from "../helpers/propTypes";
 import styles from "./IndexPage.module.scss";
 
-export const IndexPage = ({ shortFeatures, examples, features }) => {
+export const IndexPage = ({ shortFeatures, examples, features, partners }) => {
   return (
     <div>
       <Header />
@@ -21,7 +21,7 @@ export const IndexPage = ({ shortFeatures, examples, features }) => {
       <Examples shortFeatures={shortFeatures} examples={examples} />
       <Features features={features} />
       <Contact />
-      <Partners />
+      <Partners partners={partners} />
       <Footer />
     </div>
   );
@@ -31,5 +31,6 @@ IndexPage.propTypes = homePagePropTypes;
 IndexPage.defaultProps = {
   examples: [],
   features: [],
+  patners: [],
   shortFeatures: [],
 };
