@@ -31,6 +31,27 @@ const examples = [
   },
 ];
 
+const feedback = [
+  {
+    image: "/feedback/feedback-1.jpg",
+    description:
+      "Благодоря этой замечательной платформе за 3 года мы смогли создать то, чего многие бренды не смогли сделать за 10 лет",
+    companyName: "Chioma | Cee Cee’s Closet NYC",
+  },
+  {
+    image: "/feedback/feedback-2.jpg",
+    description:
+      "Благодоря этой замечательной платформе за 3 года мы смогли создать то, чего многие бренды не смогли сделать за 10 лет",
+    companyName: "Chioma | Cee Cee’s Closet NYC",
+  },
+  {
+    image: "/feedback/feedback-3.jpg",
+    description:
+      "Благодоря этой замечательной платформе за 3 года мы смогли создать то, чего многие бренды не смогли сделать за 10 лет",
+    companyName: "Chioma | Cee Cee’s Closet NYC",
+  },
+];
+
 const shortFeatures = [
   {
     title: "Начать бизнес в Интернете",
@@ -116,7 +137,13 @@ const partners = [
   },
 ];
 
-export default function Home({ examples, features, shortFeatures, partners }) {
+export default function Home({
+  examples,
+  features,
+  feedback,
+  shortFeatures,
+  partners,
+}) {
   return (
     <>
       <Head>
@@ -125,6 +152,7 @@ export default function Home({ examples, features, shortFeatures, partners }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <IndexPage
+        feedback={feedback}
         partners={partners}
         shortFeatures={shortFeatures}
         features={features}
@@ -136,6 +164,7 @@ export default function Home({ examples, features, shortFeatures, partners }) {
 
 Home.propTypes = homePagePropTypes;
 Home.defaultProps = {
+  feedback: [],
   examples: [],
   features: [],
   shortFeatures: [],
@@ -146,6 +175,7 @@ export async function getStaticProps() {
     props: {
       examples,
       features,
+      feedback,
       partners,
       shortFeatures,
     },

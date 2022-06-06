@@ -1,0 +1,58 @@
+@import "~/styles/variables.scss";
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 33.33%;
+
+    &:not(:last-child) {
+        padding-right: 2rem;
+    }
+}
+
+.headerWrapper {
+    margin-bottom: 4rem;
+}
+
+.companyNameText {
+    color: $primary-black;
+    font-size: 1.125rem;
+}
+
+.imageContainer {
+    margin-bottom: 1.375rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imageWrapper {
+    padding-right: 2rem;
+}
+
+.image {
+    border-radius: 4px;
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+}
+
+.descriptionItem {
+    width: 33.33%;
+    padding-right: 2rem;
+}
+
+.descriptionWrapper {
+    margin-bottom: 0.875rem;
+}
+
+.descriptionText {
+    color: $primary-black;
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.7;
+}

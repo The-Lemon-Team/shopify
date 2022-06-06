@@ -30,8 +30,16 @@ export const partnerShape = PropTypes.shape({
 });
 export const partnersShape = PropTypes.arrayOf(partnerShape);
 
+export const feedbackShape = PropTypes.shape({
+  image: PropTypes.string,
+  description: PropTypes.string,
+  companyName: PropTypes.string,
+});
+export const feedbackBunch = PropTypes.arrayOf(feedbackShape);
+
 export const homePagePropTypes = {
   examples: examplesShape,
+  feedback: feedbackBunch,
   features: featuresShape,
   partners: partnersShape,
   shortFeatures: shortFeaturesShape,
