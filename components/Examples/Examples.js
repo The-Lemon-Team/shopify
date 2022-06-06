@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "reactstrap";
 import Image from "next/image";
 
-import { Button } from "../Button";
 import { ShortFeatures } from "../ShortFeatures";
 import { Title } from "../Title";
 
@@ -20,9 +19,9 @@ export const Examples = ({ examples, shortFeatures }) => {
                 variant="secondary"
                 align="left"
                 subTitleContent={
-                  <Button variant="link" className={styles.subTitleBtn}>
+                  <a href="#" className={styles.subTitleBtn}>
                     Посмотреть все шаблоны →
-                  </Button>
+                  </a>
                 }
                 subTitle="
       Создайте веб-сайт электронной коммерции с мощными инструментами, которые помогут вам находить клиентов, стимулировать продажи и управлять повседневными делами."

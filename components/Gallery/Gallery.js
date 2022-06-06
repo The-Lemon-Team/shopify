@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col, Row } from "reactstrap";
 
 import { Button } from "../Button";
 import { VideoPreview } from "../VideoPreview";

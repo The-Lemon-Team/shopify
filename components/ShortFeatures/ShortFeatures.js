@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row } from "reactstrap";
 import PropTypes from "prop-types";
 import Image from "next/image";
 import { TrophyFill } from "react-bootstrap-icons";

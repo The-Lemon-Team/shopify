@@ -1,5 +1,4 @@
 import React from "react";
-import { SSRProvider } from "react-bootstrap";
 
 import { Contact } from "../Contact";
 import { Examples } from "../Examples";
@@ -14,7 +13,7 @@ import styles from "./IndexPage.module.scss";
 
 export const IndexPage = ({ shortFeatures, examples, features }) => {
   return (
-    <SSRProvider>
+    <div>
       <Header />
       <div className={styles.main}>
         <Gallery />
@@ -24,7 +23,7 @@ export const IndexPage = ({ shortFeatures, examples, features }) => {
       <Contact />
       <Partners />
       <Footer />
-    </SSRProvider>
+    </div>
   );
 };
 

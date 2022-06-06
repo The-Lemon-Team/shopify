@@ -1,0 +1,19 @@
+@import "~/styles/variables.scss";
+
+.main {
+    padding: 4rem 0 4rem;
+    background: #FFF7EA;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 6.5rem 0 6.5rem 7rem;
+    background: #fff;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2rem;
+    color: $primary-black;
+}

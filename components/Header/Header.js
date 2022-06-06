@@ -1,13 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {
-  Container,
-  Row,
-  NavLink,
-  Navbar,
-  NavItem,
-  NavbarBrand,
-} from "react-bootstrap";
+import { Container, Row, Nav, NavLink, NavItem, NavbarBrand } from "reactstrap";
 import classNames from "classnames";
 
 import { Button } from "../Button";
@@ -19,8 +12,8 @@ export const Header = () => {
   return (
     <div className={styles.main}>
       <Container>
-        <Row lg={12} md={12} xs={12}>
-          <Navbar className={styles.navBar}>
+        <Row>
+          <div className={styles.navBar}>
             <NavbarBrand
               className={classNames("mr-3", styles.navBrandContainer)}
             >
@@ -32,22 +25,32 @@ export const Header = () => {
             </NavbarBrand>
 
             <div className={styles.menu}>
-              <NavItem>
-                <NavLink className={styles.link}>Спикеры</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className={styles.link}>Программы</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className={styles.link}>Фотогалерея</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className={styles.link}>Организаторы</NavLink>
-              </NavItem>
+              <Nav>
+                <NavItem>
+                  <NavLink className={styles.link} href="#">
+                    Спикеры
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className={styles.link} href="#">
+                    Программы
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className={styles.link} href="#">
+                    Фотогалерея
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className={styles.link} href="#">
+                    Организаторы
+                  </NavLink>
+                </NavItem>
+              </Nav>
             </div>
 
             <Button className={styles.regBtn}>Попробовать</Button>
-          </Navbar>
+          </div>
         </Row>
       </Container>
     </div>

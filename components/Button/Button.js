@@ -1,7 +1,7 @@
 import React from "react";
-import { Button as BootstrapButton } from "react-bootstrap";
 import classNames from "classnames";
 import PropTypes from "prop-types";
+import { Button as BootstrapButton } from "reactstrap";
 
 import styles from "./Button.module.scss";
 

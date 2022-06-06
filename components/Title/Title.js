@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row } from "reactstrap";
 
 import styles from "./Title.module.scss";
 
